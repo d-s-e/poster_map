@@ -1,0 +1,12 @@
+.idea/
+__pycache__/
+*.py[cod]
+
+
+# Translations
+*.mo
+*.pot
+
+*.log
+local_settings.py
+.venv

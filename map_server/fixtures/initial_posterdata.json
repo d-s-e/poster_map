@@ -1,0 +1,94 @@
+[
+  {
+    "model": "map_server.posterstatus",
+    "pk": 1,
+    "fields": {
+      "name": "unknown",
+      "label": "unbekannt",
+      "description": ""
+    }
+  },
+  {
+    "model": "map_server.posterstatus",
+    "pk": 2,
+    "fields": {
+      "name": "ok",
+      "label": "OK",
+      "description": ""
+    }
+  },
+  {
+    "model": "map_server.posterstatus",
+    "pk": 3,
+    "fields": {
+      "name": "missing",
+      "label": "fehlt",
+      "description": ""
+    }
+  },
+  {
+    "model": "map_server.posterstatus",
+    "pk": 4,
+    "fields": {
+      "name": "damaged",
+      "label": "beschädigt",
+      "description": ""
+    }
+  },
+  {
+    "model": "map_server.posterstatus",
+    "pk": 5,
+    "fields": {
+      "name": "niceplace",
+      "label": "guter Standort",
+      "description": ""
+    }
+  },
+
+
+  {
+    "model": "map_server.postertype",
+    "pk": 1,
+    "fields": {
+      "name": "unknown",
+      "label": "unbekannt",
+      "description": ""
+    }
+  },
+  {
+    "model": "map_server.postertype",
+    "pk": 2,
+    "fields": {
+      "name": "stand",
+      "label": "Plakatständer",
+      "description": "stehende Plakatständer aus Holz oder Metall"
+    }
+  },
+  {
+    "model": "map_server.postertype",
+    "pk": 3,
+    "fields": {
+      "name": "twinwall",
+      "label": "Hohlkammer",
+      "description": "Hohlkammer- oder Vordermann-Plakate, in der Regel gehängt"
+    }
+  },
+  {
+    "model": "map_server.postertype",
+    "pk": 4,
+    "fields": {
+      "name": "billboard",
+      "label": "Plakatwand",
+      "description": "Plakatwand der Gemeinde oder gemietete Werbefläche"
+    }
+  },
+  {
+    "model": "map_server.postertype",
+    "pk": 5,
+    "fields": {
+      "name": "bla",
+      "label": "Großplakat",
+      "description": "freistehendes oder an Bauzaun befestigtes Banner bzw. Plakat"
+    }
+  }
+]
