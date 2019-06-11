@@ -1,0 +1,32 @@
+version: '2'
+
+services:
+
+    app:
+        build: ./core
+        volumes:
+        - ./web_static:/opt/app/static/
+        depends_on:
+          - db
+        expose:
+          - "8023"
+        ports:
+          - "8023:8000"
+        command: ./scripts/startup.sh
+
+    db:
+        build: ./db
+        restart: always
+        expose:
+            - "5432"
+        environment:
+            LC_ALL: en_US.UTF-8
+            POSTGRES_USER: postgres
+            POSTGRES_PASSWORD: postgres
+            POSTGRES_DB: postgres
+        volumes:
+            - pgdata:/var/lib/postgresql/data/
+
+
+volumes:
+  pgdata:

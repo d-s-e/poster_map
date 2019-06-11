@@ -70,8 +70,8 @@ DATABASES = {
         'ENGINE': 'django.contrib.gis.db.backends.postgis',
         'NAME': 'django_poster_map',
         'USER': 'django_poster_map',
-        'PASSWORD': 'M3t}+FJa]|yWHVa%$@(=Mv&n',
-        'HOST': '127.0.0.1',
+        'PASSWORD': 'M3t}+FJa]|yWHVa%S@(=Mv&n',
+        'HOST': 'db',
         'PORT': '5432',
     }
 }
@@ -96,8 +96,6 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
-# Internationalization
-# https://docs.djangoproject.com/en/2.2/topics/i18n/
 
 LANGUAGE_CODE = 'de-DE'
 TIME_ZONE = 'Europe/Berlin'
@@ -107,7 +105,14 @@ USE_L10N = True
 USE_TZ = True
 
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/2.2/howto/static-files/
-
 STATIC_URL = '/static/'
+MEDIA_URL = '/media/'
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+
+
+try:
+    from .local_settings import *
+except ImportError as e:
+    pass
+
