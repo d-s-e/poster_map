@@ -11,7 +11,7 @@ services:
         expose:
           - "8023"
         ports:
-          - "8023:8000"
+          - "127.0.0.1:8023:8000"
         command: ./scripts/startup.sh
 
     db:
